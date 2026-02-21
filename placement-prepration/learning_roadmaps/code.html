@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interactive Learning Roadmap | Placement Prep</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6366f1",
+                        "secondary": "#a855f7",
+                        "accent": "#06b6d4",
+                        "background-dark": "#0a0a0f",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer utilities {
+            .tech-pattern {
+                background-color: #0a0a0f;
+                background-image: radial-gradient(#1e293b 0.5px, transparent 0.5px);
+                background-size: 24px 24px;
+            }
+            .glass-card {
+                @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl;
+            }
+            .glow-node {
+                box-shadow: 0 0 15px currentColor, 0 0 30px currentColor;
+            }
+            .roadmap-svg {
+                filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.4));
+            }
+            .tooltip-content {
+                @apply absolute left-1/2 -translate-x-1/2 bottom-full mb-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 scale-95 group-hover:scale-100 z-50;
+            }
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-200 tech-pattern min-h-screen">
+<header class="sticky top-0 z-[60] bg-background-dark/80 backdrop-blur-xl border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="bg-gradient-to-br from-primary to-secondary p-2.5 rounded-xl rotate-3">
+<span class="material-icons text-white">auto_stories</span>
+</div>
+<div>
+<h1 class="text-xl font-extrabold tracking-tight text-white">PrepPath</h1>
+<p class="text-[10px] uppercase tracking-tighter text-primary font-bold">Interactive Roadmap</p>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-400">
+<a class="text-white" href="#">Roadmaps</a>
+<a class="hover:text-white transition-colors" href="#">Practice</a>
+<a class="hover:text-white transition-colors" href="#">Interviews</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full border border-white/10">
+<span class="material-icons text-orange-500 text-sm">local_fire_department</span>
+<span class="text-sm font-bold">12 Days</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-slate-700 to-slate-900 border border-white/10 overflow-hidden">
+<img alt="User" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDN_uZMQnw1PumW1Nb_PgFSIhixs-SaVaIs3TFYiHNEzcMbUg1WdHMK0X_UBm7WGpFvhtFufNbK5hmaMWYr-E-JCRveu-UWBVhUyUj6hkDqd_x61D1Hha_P-IsldpAqM9cDFpHMMtnI3Z6lS95iF_lXQXbsg4DaQsYixyPdNyCh-06l4RzlOAllICBMY5GW2E2xIEEI9LdQsKJwpsorsnFdXM-LA_3RXLkHEZ-CWt1IzPUcyi_LqJ1-oJB5x50eh-cdXqyz2o00LI"/>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex gap-10">
+<aside class="hidden lg:block w-72 shrink-0 space-y-6">
+<div class="glass-card rounded-2xl p-6">
+<h2 class="text-xs font-black text-slate-500 uppercase tracking-widest mb-5">Learning Journey</h2>
+<div class="space-y-6">
+<div>
+<div class="flex justify-between text-sm mb-3">
+<span class="font-bold text-white">Full Stack Path</span>
+<span class="text-accent font-black">45%</span>
+</div>
+<div class="w-full bg-white/5 h-2.5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-accent h-full w-[45%] rounded-full"></div>
+</div>
+</div>
+<div class="pt-5 border-t border-white/10">
+<p class="text-[10px] text-slate-400 uppercase tracking-widest font-bold mb-2">Next Target</p>
+<p class="text-sm font-bold text-white">Advanced System Design</p>
+<button class="mt-4 w-full bg-white text-black py-3 rounded-xl text-xs font-black uppercase tracking-widest hover:bg-slate-200 transition-all active:scale-95">Resume Study</button>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<a class="flex items-center justify-between group px-5 py-4 bg-primary/20 border border-primary/30 rounded-2xl transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-icons text-primary">route</span>
+<span class="font-bold text-sm text-white">Learning Paths</span>
+</div>
+<span class="material-icons text-xs text-primary">chevron_right</span>
+</a>
+<a class="flex items-center justify-between group px-5 py-4 hover:bg-white/5 rounded-2xl transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-icons text-slate-400 group-hover:text-white">code</span>
+<span class="font-bold text-sm text-slate-400 group-hover:text-white">Practice Labs</span>
+</div>
+</a>
+<a class="flex items-center justify-between group px-5 py-4 hover:bg-white/5 rounded-2xl transition-all" href="#">
+<div class="flex items-center gap-3">
+<span class="material-icons text-slate-400 group-hover:text-white">groups</span>
+<span class="font-bold text-sm text-slate-400 group-hover:text-white">Peer Review</span>
+</div>
+</a>
+</div>
+</aside>
+<main class="flex-1">
+<div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-accent/10 border border-accent/20 rounded-full text-accent text-[10px] font-bold uppercase tracking-wider mb-3">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
+</span>
+                    Live Learning
+                </div>
+<h2 class="text-4xl font-black tracking-tight text-white mb-2">Master Your Destiny</h2>
+<p class="text-slate-400 text-sm">A fluid path curated for modern Full Stack Engineering roles.</p>
+</div>
+<div class="flex p-1.5 bg-white/5 border border-white/10 rounded-2xl backdrop-blur-sm">
+<button class="px-6 py-2.5 bg-white text-black rounded-xl text-xs font-bold transition-all shadow-xl">Full Stack</button>
+<button class="px-6 py-2.5 text-slate-400 text-xs font-bold hover:text-white transition-all">Data Science</button>
+</div>
+</div>
+<div class="relative min-h-[1200px] flex flex-col items-center">
+<svg class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none roadmap-svg" fill="none" preserveAspectRatio="none" viewBox="0 0 400 1200" xmlns="http://www.w3.org/2000/svg">
+<path d="M200 60 C 200 60, 200 150, 300 180 C 400 210, 400 300, 200 330 C 0 360, 0 450, 100 480 C 200 510, 200 600, 200 600 C 200 600, 200 690, 300 720 C 400 750, 400 840, 200 870 C 0 900, 0 990, 100 1020 C 200 1050, 200 1140, 200 1140" stroke="url(#gradient-path)" stroke-dasharray="8 12" stroke-linecap="round" stroke-width="4"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="gradient-path" x1="0" x2="0" y1="0" y2="1200">
+<stop stop-color="#6366f1"></stop>
+<stop offset="0.5" stop-color="#a855f7"></stop>
+<stop offset="1" stop-color="#06b6d4"></stop>
+</linearGradient>
+</defs>
+</svg>
+<div class="relative z-10 w-full flex justify-center mb-40 mt-10">
+<div class="group relative">
+<div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center glow-node text-white border-4 border-background-dark cursor-pointer transform group-hover:scale-110 transition-transform">
+<span class="material-icons text-sm">check</span>
+</div>
+<div class="tooltip-content w-64">
+<div class="glass-card p-4 rounded-2xl border-primary/50">
+<div class="flex justify-between items-center mb-2">
+<span class="text-[9px] font-black uppercase text-primary tracking-widest px-2 py-0.5 bg-primary/20 rounded">Completed</span>
+<span class="text-[10px] text-slate-400">Step 1</span>
+</div>
+<h4 class="font-bold text-white mb-1">DSA Foundation</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Mastered core data structures and algorithm analysis techniques.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 w-full flex justify-center mb-40 translate-x-[120px]">
+<div class="group relative">
+<div class="w-12 h-12 rounded-full bg-secondary flex items-center justify-center glow-node text-white border-4 border-background-dark cursor-pointer transform group-hover:scale-110 transition-transform">
+<span class="material-icons text-sm">check</span>
+</div>
+<div class="tooltip-content w-64">
+<div class="glass-card p-4 rounded-2xl border-secondary/50">
+<div class="flex justify-between items-center mb-2">
+<span class="text-[9px] font-black uppercase text-secondary tracking-widest px-2 py-0.5 bg-secondary/20 rounded">Completed</span>
+<span class="text-[10px] text-slate-400">Step 2</span>
+</div>
+<h4 class="font-bold text-white mb-1">Modern UI/UX</h4>
+<p class="text-xs text-slate-400 leading-relaxed">Built responsive interfaces using React and modern CSS frameworks.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 w-full flex justify-center mb-40 -translate-x-[120px]">
+<div class="group relative">
+<div class="absolute -inset-4 bg-accent/20 rounded-full blur-xl animate-pulse"></div>
+<div class="w-16 h-16 rounded-full bg-accent flex items-center justify-center glow-node text-white border-4 border-white cursor-pointer transform group-hover:scale-110 transition-transform shadow-[0_0_30px_#06b6d4]">
+<span class="material-icons text-2xl">rocket_launch</span>
+</div>
+<div class="tooltip-content w-72 !opacity-100 !visible !scale-100">
+<div class="glass-card p-5 rounded-2xl border-accent/60 bg-accent/10">
+<div class="flex justify-between items-center mb-3">
+<span class="text-[9px] font-black uppercase text-accent tracking-widest px-2 py-0.5 bg-accent/30 rounded">In Progress</span>
+<span class="text-[10px] text-slate-300">Targeting 20th Oct</span>
+</div>
+<h4 class="font-bold text-white text-lg mb-2">Scalable Backend</h4>
+<p class="text-xs text-slate-200 leading-relaxed mb-4">Building distributed systems with Node.js and Redis caching.</p>
+<button class="w-full bg-white text-black py-2 rounded-lg text-[10px] font-black uppercase tracking-widest">Jump Into Code</button>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 w-full flex justify-center mb-40 translate-x-[120px]">
+<div class="group relative">
+<div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-slate-600 border-4 border-background-dark cursor-not-allowed transform transition-transform group-hover:scale-105">
+<span class="material-icons text-sm">lock</span>
+</div>
+<div class="tooltip-content w-64">
+<div class="glass-card p-4 rounded-2xl border-white/10 opacity-60">
+<div class="flex justify-between items-center mb-2">
+<span class="text-[9px] font-black uppercase text-slate-400 tracking-widest px-2 py-0.5 bg-white/5 rounded">Locked</span>
+<span class="text-[10px] text-slate-500">12h Content</span>
+</div>
+<h4 class="font-bold text-slate-300 mb-1">System Design</h4>
+<p class="text-xs text-slate-500 leading-relaxed">High-level architectural patterns for multi-million user apps.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 w-full flex justify-center mb-40">
+<div class="group relative">
+<div class="w-12 h-12 rounded-full bg-slate-800 flex items-center justify-center text-slate-600 border-4 border-background-dark cursor-not-allowed">
+<span class="material-icons text-sm">lock</span>
+</div>
+<div class="tooltip-content w-64">
+<div class="glass-card p-4 rounded-2xl border-white/10 opacity-60">
+<div class="flex justify-between items-center mb-2">
+<span class="text-[9px] font-black uppercase text-slate-400 tracking-widest px-2 py-0.5 bg-white/5 rounded">Locked</span>
+</div>
+<h4 class="font-bold text-slate-300 mb-1">The Mock Arena</h4>
+<p class="text-xs text-slate-500 leading-relaxed">Final step: AI-powered mock interviews and behavior prep.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<aside class="hidden xl:block w-80 shrink-0">
+<div class="sticky top-32 glass-card rounded-2xl overflow-hidden border-white/5 shadow-none">
+<div class="p-6 bg-gradient-to-br from-white/5 to-transparent">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-icons text-accent">auto_awesome</span>
+<h3 class="font-black text-white text-sm">Flash Learning</h3>
+</div>
+<p class="text-[10px] text-slate-400 font-bold uppercase tracking-widest">Recommended for Node.js</p>
+</div>
+<div class="px-2 pb-6 space-y-2">
+<div class="p-4 hover:bg-white/5 rounded-xl cursor-pointer transition-all border border-transparent hover:border-white/10 group">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center shrink-0">
+<span class="material-icons text-red-500 text-sm">play_circle</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white group-hover:text-accent transition-colors">Microservices Explained</h4>
+<p class="text-[10px] text-slate-500 mt-1">15 mins • Tech Insights</p>
+</div>
+</div>
+</div>
+<div class="p-4 hover:bg-white/5 rounded-xl cursor-pointer transition-all border border-transparent hover:border-white/10 group">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+<span class="material-icons text-primary text-sm">article</span>
+</div>
+<div>
+<h4 class="text-xs font-bold text-white group-hover:text-accent transition-colors">Event Loop Mastery</h4>
+<p class="text-[10px] text-slate-500 mt-1">Deep Dive Reading</p>
+</div>
+</div>
+</div>
+<div class="mt-4 mx-2 p-4 rounded-xl bg-gradient-to-br from-accent/20 to-secondary/20 border border-white/10">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-icons text-yellow-500 text-xs">emoji_objects</span>
+<span class="text-[10px] font-black text-white uppercase tracking-tighter">AI Mentor Tip</span>
+</div>
+<p class="text-[11px] text-slate-300 italic leading-relaxed">
+                        "Don't just write APIs, understand the underlying V8 engine architecture. It's the most common differentiator in L2 interviews."
+                    </p>
+</div>
+</div>
+</div>
+</aside>
+</div>
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 lg:hidden w-[90%] glass-card rounded-2xl px-8 py-4 flex justify-between items-center z-[70] border-white/10">
+<button class="text-primary"><span class="material-icons">route</span></button>
+<button class="text-slate-500 hover:text-white"><span class="material-icons">code</span></button>
+<button class="text-slate-500 hover:text-white"><span class="material-icons">groups</span></button>
+<button class="text-slate-500 hover:text-white"><span class="material-icons">account_circle</span></button>
+</div>
+
+</body></html>

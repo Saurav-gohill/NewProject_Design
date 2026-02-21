@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Modern Dark Aptitude Arena | Placement Prep</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#0ea5e9",
+                        "neon-blue": "#38bdf8",
+                        "neon-emerald": "#10b981",
+                        "deep-navy": "#0a0f18",
+                        "charcoal": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.75rem",
+                        "lg": "1.5rem",
+                        "xl": "2.5rem",
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-deep-navy text-slate-100 font-display min-h-screen flex flex-col overflow-hidden;
+            }
+        }
+        .glass-panel {
+            @apply bg-slate-900/40 backdrop-blur-xl border border-white/10;
+        }
+        .glass-frame {
+            @apply bg-white/5 backdrop-blur-md border border-white/5 rounded-2xl overflow-hidden;
+        }
+        .neon-glow-blue {
+            box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+        }
+        .neon-glow-emerald {
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.3);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            @apply bg-transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            @apply bg-slate-700/50 rounded-full;
+        }
+        .custom-scrollbar:hover::-webkit-scrollbar-thumb {
+            @apply bg-slate-600;
+        }
+    </style>
+</head>
+<body>
+<header class="bg-deep-navy/80 backdrop-blur-md border-b border-white/5 px-8 py-4 flex items-center justify-between z-30">
+<div class="flex items-center gap-5">
+<div class="w-12 h-12 bg-gradient-to-br from-neon-blue to-primary rounded-xl flex items-center justify-center text-white neon-glow-blue">
+<span class="material-icons text-2xl">rocket_launch</span>
+</div>
+<div>
+<h1 class="text-xl font-bold text-white tracking-tight">Aptitude Arena</h1>
+<p class="text-xs text-slate-400 font-medium tracking-wide uppercase">Elite Mock Test Series • TCS NQT</p>
+</div>
+</div>
+<div class="flex items-center gap-10">
+<div class="flex flex-col items-center">
+<span class="text-[10px] uppercase tracking-[0.2em] text-slate-500 font-bold mb-1">Session Ends In</span>
+<div class="flex items-center gap-2 text-neon-blue font-bold text-2xl drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]">
+<span class="material-icons text-lg">schedule</span>
+<span>24:15</span>
+</div>
+</div>
+<button class="bg-white/5 hover:bg-white/10 text-white border border-white/10 px-8 py-3 rounded-full font-bold transition-all flex items-center gap-2 group">
+            Finish Assessment
+            <span class="material-icons text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex overflow-hidden">
+<section class="flex-1 overflow-y-auto custom-scrollbar p-8 lg:p-16 flex justify-center bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-charcoal/30 via-deep-navy to-deep-navy">
+<div class="max-w-4xl w-full">
+<div class="glass-panel p-10 rounded-3xl relative overflow-hidden">
+<div class="flex items-center gap-3 mb-10">
+<span class="bg-neon-blue/10 text-neon-blue border border-neon-blue/20 px-4 py-1.5 rounded-lg text-xs font-bold uppercase tracking-widest">Question 12</span>
+<span class="text-slate-500 text-sm font-medium">Quantitative Ability</span>
+<div class="ml-auto flex items-center gap-2 bg-amber-500/10 text-amber-500 px-3 py-1 rounded-lg border border-amber-500/20">
+<span class="material-symbols-outlined text-[16px]">equalizer</span>
+<span class="text-xs font-bold uppercase tracking-wider">Level: Medium</span>
+</div>
+</div>
+<div class="space-y-8">
+<h2 class="text-3xl font-semibold text-white leading-[1.4] tracking-tight">
+                        If a train 150m long passes a telegraph pole in 12 seconds, what is the speed of the train in km/hr?
+                    </h2>
+<p class="text-slate-400 text-lg leading-relaxed max-w-2xl">
+                        Consider the relative speed of the train with respect to the stationary object (pole). The length of the train serves as the total distance covered.
+                    </p>
+<div class="glass-frame p-4 my-10 group">
+<div class="relative rounded-xl overflow-hidden bg-slate-800/50">
+<img class="w-full opacity-70 grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:opacity-100" data-alt="Schematic diagram showing a train passing a pole" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3csX9c0ZwUultGbfWPfH33DwegBkz5rcpsRS1Snes3BvUSj0hOzhpFoXA4_-jPaFo3_DeJCeljLuCrAhmwiV7gz7gygo7LFbUEC4cgEQ9Ouaej2c9mgm6OOFUPTncjKgXnksUcc3YoShAQ5oGrAf_VPt5Y3X5ODMH6VOaEnNLEPp6Houm2rMtoWTVAgyMJ-rL_ln-S3iskb996zosGhlYz4ZBkEuxJQKlRXceL4Vgg_Q58kq1EVIxwrPn937IR9AXKSdTWYhEjNQ"/>
+</div>
+<div class="flex items-center justify-center gap-2 mt-4 text-slate-500 text-xs italic tracking-wide">
+<span class="material-icons text-[14px]">info</span>
+                            Fig 1.2: Train motion relative to a static reference point
+                        </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<aside class="w-[480px] flex flex-col glass-panel border-y-0 border-r-0 p-8 gap-8">
+<div class="space-y-6">
+<h3 class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] flex items-center gap-3">
+<span class="material-symbols-outlined text-lg">radio_button_checked</span>
+                Your Response
+            </h3>
+<div class="space-y-3">
+<label class="group cursor-pointer block">
+<input class="hidden peer" name="answer" type="radio"/>
+<div class="flex items-center gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] hover:border-white/10 transition-all peer-checked:border-neon-blue peer-checked:bg-neon-blue/5 peer-checked:neon-glow-blue">
+<div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center font-bold text-slate-500 peer-checked:bg-neon-blue peer-checked:text-white peer-checked:border-neon-blue transition-all">A</div>
+<span class="text-slate-300 font-medium group-hover:text-white transition-colors">40 km/hr</span>
+</div>
+</label>
+<label class="group cursor-pointer block">
+<input checked="" class="hidden peer" name="answer" type="radio"/>
+<div class="flex items-center gap-4 p-5 rounded-2xl border border-neon-blue bg-neon-blue/10 neon-glow-blue transition-all">
+<div class="w-10 h-10 rounded-xl bg-neon-blue flex items-center justify-center font-bold text-white">B</div>
+<span class="text-white font-semibold">45 km/hr</span>
+<span class="material-icons ml-auto text-neon-blue">verified</span>
+</div>
+</label>
+<label class="group cursor-pointer block">
+<input class="hidden peer" name="answer" type="radio"/>
+<div class="flex items-center gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all peer-checked:border-neon-blue peer-checked:bg-neon-blue/5 peer-checked:neon-glow-blue">
+<div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center font-bold text-slate-500 peer-checked:bg-neon-blue peer-checked:text-white transition-all">C</div>
+<span class="text-slate-300 font-medium">50 km/hr</span>
+</div>
+</label>
+<label class="group cursor-pointer block">
+<input class="hidden peer" name="answer" type="radio"/>
+<div class="flex items-center gap-4 p-5 rounded-2xl border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all peer-checked:border-neon-blue peer-checked:bg-neon-blue/5 peer-checked:neon-glow-blue">
+<div class="w-10 h-10 rounded-xl border border-white/10 flex items-center justify-center font-bold text-slate-500 peer-checked:bg-neon-blue peer-checked:text-white transition-all">D</div>
+<span class="text-slate-300 font-medium">55 km/hr</span>
+</div>
+</label>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 border border-white/10 hover:border-amber-500/50 hover:bg-amber-500/5 text-slate-400 hover:text-amber-500 py-4 rounded-2xl font-bold transition-all">
+<span class="material-icons text-lg">bookmark_border</span>
+                    Flag Question
+                </button>
+<button class="flex items-center justify-center gap-2 border border-white/10 hover:border-white/20 hover:bg-white/5 text-slate-400 hover:text-white py-4 rounded-2xl font-bold transition-all">
+<span class="material-icons text-lg">refresh</span>
+                    Clear Choice
+                </button>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto custom-scrollbar space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="text-xs font-bold text-slate-500 uppercase tracking-[0.2em] flex items-center gap-3">
+<span class="material-symbols-outlined text-lg">grid_view</span>
+                    Navigation
+                </h3>
+<span class="text-[10px] font-black bg-white/5 text-slate-300 px-3 py-1 rounded-md border border-white/10">12 / 30</span>
+</div>
+<div class="grid grid-cols-6 gap-3">
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">01</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">02</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">03</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">04</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">05</button>
+<button class="w-10 h-10 rounded-xl bg-amber-500 text-white font-black text-xs flex items-center justify-center border-b-2 border-amber-700">06</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">07</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">08</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">09</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">10</button>
+<button class="w-10 h-10 rounded-xl bg-neon-emerald text-white font-black text-xs flex items-center justify-center neon-glow-emerald border-b-2 border-emerald-700">11</button>
+<button class="w-10 h-10 rounded-xl bg-neon-blue text-white font-black text-xs flex items-center justify-center ring-4 ring-neon-blue/30 scale-110 neon-glow-blue">12</button>
+<button class="w-10 h-10 rounded-xl bg-white/[0.03] text-slate-500 font-bold text-xs flex items-center justify-center border border-white/5 hover:border-white/10 transition-all">13</button>
+<button class="w-10 h-10 rounded-xl bg-white/[0.03] text-slate-500 font-bold text-xs flex items-center justify-center border border-white/5 hover:border-white/10 transition-all">14</button>
+<button class="w-10 h-10 rounded-xl bg-white/[0.03] text-slate-500 font-bold text-xs flex items-center justify-center border border-white/5 hover:border-white/10 transition-all">15</button>
+<button class="w-10 h-10 rounded-xl bg-white/[0.03] text-slate-500 font-bold text-xs flex items-center justify-center border border-white/5 hover:border-white/10 transition-all">16</button>
+<button class="w-10 h-10 rounded-xl bg-white/[0.03] text-slate-500 font-bold text-xs flex items-center justify-center border border-white/5 hover:border-white/10 transition-all">17</button>
+<button class="w-10 h-10 rounded-xl bg-white/[0.03] text-slate-500 font-bold text-xs flex items-center justify-center border border-white/5 hover:border-white/10 transition-all">18</button>
+</div>
+<div class="flex flex-wrap gap-x-6 gap-y-3 pt-6 border-t border-white/5">
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-neon-emerald neon-glow-emerald"></span>
+<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Answered</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-amber-500"></span>
+<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Flagged</span>
+</div>
+<div class="flex items-center gap-2.5">
+<span class="w-3 h-3 rounded-full bg-white/10"></span>
+<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Empty</span>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<footer class="bg-deep-navy border-t border-white/5 px-10 py-5 flex items-center justify-between z-30">
+<div class="flex gap-4">
+<button class="bg-white/[0.03] hover:bg-white/[0.08] text-slate-300 px-8 py-3 rounded-2xl font-bold transition-all flex items-center gap-3 border border-white/5">
+<span class="material-icons text-lg">arrow_back</span>
+            Previous
+        </button>
+<button class="bg-white/10 hover:bg-white/20 text-white px-10 py-3 rounded-2xl font-bold transition-all flex items-center gap-3 border border-white/10">
+            Next Question
+            <span class="material-icons text-lg">arrow_forward</span>
+</button>
+</div>
+<div class="hidden lg:flex items-center gap-8">
+<div class="flex flex-col items-end gap-2">
+<div class="flex items-center gap-3">
+<span class="text-[10px] text-slate-500 font-black uppercase tracking-widest">Assessment Progress</span>
+<span class="text-[10px] text-neon-blue font-black tracking-widest">40%</span>
+</div>
+<div class="w-64 h-1.5 bg-white/5 rounded-full overflow-hidden">
+<div class="bg-gradient-to-r from-neon-blue to-primary w-[40%] h-full rounded-full neon-glow-blue"></div>
+</div>
+</div>
+<button class="w-12 h-12 flex items-center justify-center rounded-2xl bg-white/[0.03] text-slate-400 hover:text-white hover:bg-white/10 transition-all border border-white/5">
+<span class="material-icons">settings</span>
+</button>
+</div>
+</footer>
+
+</body></html>

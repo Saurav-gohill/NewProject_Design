@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up | Placement Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col justify-center items-center p-4">
+<!-- Navbar/Logo -->
+<div class="mb-8 text-center">
+<div class="flex items-center justify-center gap-2 mb-2">
+<div class="bg-primary p-2 rounded-lg">
+<span class="material-icons text-white">code</span>
+</div>
+<span class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Placement<span class="text-primary">Hub</span></span>
+</div>
+</div>
+<!-- Main Container -->
+<div class="w-full max-w-4xl bg-white dark:bg-slate-900 rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+<!-- Left Side: Visual/Context -->
+<div class="hidden md:flex md:w-5/12 bg-primary/10 dark:bg-primary/5 p-10 flex-col justify-between">
+<div>
+<h1 class="text-3xl font-bold text-slate-900 dark:text-white leading-tight mb-4">Master Your Future Career.</h1>
+<p class="text-slate-600 dark:text-slate-400">Join 50,000+ students preparing for top-tier tech roles with mock interviews and coding rounds.</p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm">
+<span class="material-icons text-primary text-sm">check_circle</span>
+</div>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Curated DSA Patterns</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm">
+<span class="material-icons text-primary text-sm">video_call</span>
+</div>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">AI-Powered Mock Interviews</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-white dark:bg-slate-800 flex items-center justify-center shadow-sm">
+<span class="material-icons text-primary text-sm">trending_up</span>
+</div>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-300">Track Your Progress</span>
+</div>
+</div>
+<div class="relative w-full aspect-square mt-8">
+<img alt="Students studying together" class="w-full h-full object-cover rounded-xl shadow-lg" data-alt="Group of students working on laptops" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGrvN5fyOHDscJH6D4Q0FL1e13rqqNCgJSkIkCnUJLc_otOpmlmFmmScUHy3Dw3EpuacXTxPqqzpwyYsfNkd5Zq3kOqWTtwvIdrQ03fwbJ76GjYVY_QmLOep7BLT0bm2ulUeYB3DN2CzNuBp9pwM60m3u6Nh1VtoiFOJv7FCVAegq5NLSDY1aylMpHDkkzW_oxTK_LFUnUSEgGwk5hIh9hmK5Z__TYhqtJoOWqxu-s4FSmDEL4bnApY_q2oNAKIvvwlTAA-JkYi8"/>
+<div class="absolute -bottom-4 -right-4 bg-white dark:bg-slate-800 p-4 rounded-lg shadow-xl border border-slate-100 dark:border-slate-700">
+<div class="flex items-center gap-2">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-800 bg-slate-200"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-800 bg-slate-300"></div>
+<div class="w-8 h-8 rounded-full border-2 border-white dark:border-slate-800 bg-slate-400"></div>
+</div>
+<span class="text-xs font-bold text-primary">+4.2k active today</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Sign Up Form -->
+<div class="w-full md:w-7/12 p-8 md:p-12">
+<!-- Progress Stepper -->
+<div class="mb-8">
+<div class="flex items-center justify-between mb-2">
+<span class="text-xs font-bold uppercase tracking-wider text-primary">Step 1 of 2</span>
+<span class="text-xs font-medium text-slate-500">Profile Details</span>
+</div>
+<div class="w-full h-1.5 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+<div class="w-1/2 h-full bg-primary rounded-full transition-all duration-500"></div>
+</div>
+</div>
+<div class="mb-8">
+<h2 class="text-2xl font-bold text-slate-900 dark:text-white">Create your account</h2>
+<p class="text-slate-500 dark:text-slate-400 mt-1">Fill in the details below to get started.</p>
+</div>
+<form class="space-y-5">
+<!-- Row 1: Full Name -->
+<div>
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="full-name">Full Name</label>
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">person_outline</span>
+<input class="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none text-slate-900 dark:text-white placeholder:text-slate-400" id="full-name" placeholder="John Doe" type="text"/>
+</div>
+</div>
+<!-- Row 2: College & Grad Year -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="college">College Name</label>
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">school</span>
+<input class="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none text-slate-900 dark:text-white placeholder:text-slate-400" id="college" placeholder="IIT Bombay" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="grad-year">Graduation Year</label>
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">calendar_today</span>
+<select class="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none text-slate-900 dark:text-white appearance-none" id="grad-year">
+<option disabled="" selected="" value="">Select year</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+<option value="2027">2027</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Row 3: Email -->
+<div>
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="email">Email Address</label>
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">mail_outline</span>
+<input class="w-full pl-11 pr-4 py-3 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none text-slate-900 dark:text-white placeholder:text-slate-400" id="email" placeholder="john@university.edu" type="email"/>
+</div>
+</div>
+<!-- Row 4: Password -->
+<div>
+<label class="block text-sm font-semibold text-slate-700 dark:text-slate-300 mb-1.5" for="password">Password</label>
+<div class="relative">
+<span class="material-icons absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">lock_outline</span>
+<input class="w-full pl-11 pr-12 py-3 bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-all outline-none text-slate-900 dark:text-white placeholder:text-slate-400" id="password" placeholder="••••••••" type="password"/>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200" type="button">
+<span class="material-icons text-xl">visibility_off</span>
+</button>
+</div>
+<p class="mt-2 text-[11px] text-slate-500 dark:text-slate-400 flex items-center gap-1">
+<span class="material-icons text-[14px]">info</span>
+                        Must be at least 8 characters long with a number and symbol.
+                    </p>
+</div>
+<!-- Action Button -->
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-3.5 rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 group mt-4" type="submit">
+<span>Continue to Preferences</span>
+<span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<!-- Divider -->
+<div class="relative py-4">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-slate-200 dark:border-slate-700"></div>
+</div>
+<div class="relative flex justify-center text-xs uppercase">
+<span class="bg-white dark:bg-slate-900 px-3 text-slate-500 font-medium">Or sign up with</span>
+</div>
+</div>
+<!-- Social Logins -->
+<div class="grid grid-cols-2 gap-4">
+<button class="flex items-center justify-center gap-2 px-4 py-2.5 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all" type="button">
+<img alt="Google" class="w-5 h-5" data-alt="Google G Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJSxHko49IwhSbszc8Bhyg7MyOd_Zf_cj5p5DfUYw0Eow3pc4ZqjU9Sdlea7XBC0gf8LXX3oUmG3YQ7mVc5iN0i6kTSgabC1Di48qh7zFulua_HZUUSj7SowbYl-LHEWs9X8IUjOqptD7rSqMojYhIZJtSep2y-QQUAa5gl6QcSZU7LX-Qjd96fxDOAN7p5h5virAz-gvYyjY3a_2cqvnmkXuZ0lqYxAOZvtHdTMBXji65jIHX-nlXAiOsPkgDicXLcIGikqZvzU8"/>
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">Google</span>
+</button>
+<button class="flex items-center justify-center gap-2 px-4 py-2.5 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-all" type="button">
+<span class="material-icons text-xl">terminal</span>
+<span class="text-sm font-semibold text-slate-700 dark:text-slate-300">GitHub</span>
+</button>
+</div>
+</form>
+<!-- Footer Link -->
+<p class="mt-10 text-center text-sm text-slate-600 dark:text-slate-400">
+                Already have an account? 
+                <a class="text-primary font-bold hover:underline" href="#">Log In</a>
+</p>
+</div>
+</div>
+<!-- Legal Footer -->
+<div class="mt-8 flex gap-6 text-xs font-medium text-slate-500 dark:text-slate-500">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Contact Support</a>
+</div>
+</body></html>

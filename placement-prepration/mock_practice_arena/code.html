@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Advanced Practice Arena | Coding Excellence</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Lora:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #6366f1;
+            --bg-dark: #0a0a0c;
+            --panel-bg: #111114;
+            --border-color: #1f1f23;
+            --syntax-keyword: #ff7b72;
+            --syntax-func: #d2a8ff;
+            --syntax-string: #a5d6ff;
+            --syntax-number: #f0883e;
+            --syntax-comment: #8b949e;
+            --syntax-class: #ffa657;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .problem-description p {
+            margin-bottom: 1.25rem;
+            line-height: 1.75;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #2a2a2e;
+            border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #3f3f46;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6366f1",
+                        "background-dark": "#0a0a0c",
+                        "panel-dark": "#111114",
+                    },
+                    fontFamily: {
+                        "sans": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Lora", "serif"],
+                        "mono": ["JetBrains Mono", "monospace"]
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-dark font-sans text-slate-300 antialiased min-h-screen flex flex-col overflow-hidden">
+<header class="h-16 border-b border-[var(--border-color)] bg-panel-dark/80 backdrop-blur-md flex items-center justify-between px-8 z-20">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 bg-primary/10 rounded-xl flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-xl">terminal</span>
+</div>
+<h1 class="font-bold text-lg tracking-tight text-white">Practice<span class="text-primary">Arena</span></h1>
+</div>
+<div class="h-8 w-px bg-white/5"></div>
+<div class="flex items-center gap-3 text-sm font-medium">
+<span class="text-slate-500">Curriculum</span>
+<span class="material-symbols-outlined text-sm text-slate-600">chevron_right</span>
+<span class="text-white">Dynamic Programming</span>
+</div>
+</div>
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 tabular-nums">
+<span class="material-symbols-outlined text-slate-500 text-lg">schedule</span>
+<span class="font-mono text-lg font-light tracking-widest text-white">00:24:59</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-white/5 hover:bg-white/10 text-white px-6 py-2 rounded-full text-sm font-medium transition-all border border-white/10">
+                Save Draft
+            </button>
+<button class="bg-primary hover:bg-indigo-500 text-white px-8 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-indigo-500/20">
+                Finish Test
+            </button>
+<div class="w-9 h-9 rounded-full bg-slate-800 overflow-hidden border border-white/10 ring-2 ring-transparent hover:ring-primary/40 transition-all cursor-pointer">
+<img alt="User Profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5ae8dCOU_w75YM_ZzHs05DzuXh53wYaIgLF20PaQfKhle-cqKraEK9uIn4796mGOsmIkbGeDfAytfw5s-XT5VdVU2rgZsuS1ajnqBeo8Pryl6hPyfsx7RcDebjEi2a3K5utAvjKXAT6AH6NdTENuqFEVf6u7xHiazues2LMKCc-TLmmmIFBk1W9LCExB1NmF3KxMGASPgmPD3WeD9RCQQnZW_41hYiyOStrs2Nya6MJCPp9baYB-cc2wwTK-Hc9gvpZwPq8cBC6E"/>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 flex overflow-hidden">
+<aside class="w-[42%] flex flex-col border-r border-[var(--border-color)] bg-panel-dark">
+<div class="flex-1 overflow-y-auto p-10 custom-scrollbar">
+<div class="flex items-center gap-4 mb-6">
+<span class="px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-widest border border-emerald-500/20">Medium</span>
+<div class="flex items-center gap-4 text-xs text-slate-500 font-medium">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">speed</span> 2.0s</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">memory</span> 256MB</span>
+</div>
+</div>
+<h2 class="text-3xl font-bold mb-8 text-white tracking-tight">1. Maximize Subarray Sum</h2>
+<div class="problem-description font-serif text-[1.1rem] text-slate-400 leading-relaxed max-w-none">
+<p>Given an integer array <code class="bg-white/5 px-2 py-0.5 rounded font-mono text-primary text-sm italic">nums</code>, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.</p>
+<p>A <strong>subarray</strong> is defined as a contiguous sequence of elements within an array. Solving this efficiently is a cornerstone of competitive programming interviews.</p>
+<div class="my-8 space-y-4">
+<div class="bg-white/[0.02] p-6 rounded-2xl border border-white/[0.05]">
+<h4 class="text-xs font-bold text-slate-500 mb-4 uppercase tracking-[0.2em]">Example 1</h4>
+<div class="font-mono text-sm space-y-1">
+<p><span class="text-slate-600">Input:</span> <span class="text-slate-300">nums = [-2,1,-3,4,-1,2,1,-5,4]</span></p>
+<p><span class="text-slate-600">Output:</span> <span class="text-emerald-400">6</span></p>
+<p class="text-slate-500 italic mt-2 text-xs">Explanation: [4,-1,2,1] has the largest sum = 6.</p>
+</div>
+</div>
+<div class="bg-white/[0.02] p-6 rounded-2xl border border-white/[0.05]">
+<h4 class="text-xs font-bold text-slate-500 mb-4 uppercase tracking-[0.2em]">Example 2</h4>
+<div class="font-mono text-sm space-y-1">
+<p><span class="text-slate-600">Input:</span> <span class="text-slate-300">nums = [1]</span></p>
+<p><span class="text-slate-600">Output:</span> <span class="text-emerald-400">1</span></p>
+</div>
+</div>
+</div>
+<h4 class="text-xs font-bold text-slate-500 mb-4 uppercase tracking-[0.2em] font-sans">Constraints</h4>
+<ul class="space-y-3 mb-8 font-sans text-sm list-none">
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 text-xs">●</span>
+<span>1 ≤ nums.length ≤ 10<sup>5</sup></span>
+</li>
+<li class="flex items-start gap-3">
+<span class="text-primary mt-1 text-xs">●</span>
+<span>-10<sup>4</sup> ≤ nums[i] ≤ 10<sup>4</sup></span>
+</li>
+</ul>
+<div class="flex items-center gap-3 p-4 bg-primary/5 border border-primary/10 rounded-2xl">
+<span class="material-symbols-outlined text-primary">tips_and_updates</span>
+<p class="text-sm font-sans italic text-slate-400 m-0">Try solving this with O(n) time complexity using Kadane's Algorithm.</p>
+</div>
+</div>
+</div>
+<div class="h-56 border-t border-[var(--border-color)] bg-black/20 p-6">
+<div class="flex gap-6 mb-6">
+<button class="text-sm font-bold text-white border-b-2 border-primary pb-2">Test Cases</button>
+<button class="text-sm font-medium text-slate-600 hover:text-slate-400 pb-2 transition-colors">History</button>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-white transition-all hover:bg-white/10">
+<div class="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"></div>
+                    Case 1
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-white transition-all hover:bg-white/10">
+<div class="w-1.5 h-1.5 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]"></div>
+                    Case 2
+                </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-slate-500 opacity-60">
+<div class="w-1.5 h-1.5 rounded-full bg-slate-600"></div>
+                    Case 3 (Hidden)
+                </button>
+</div>
+<div class="mt-4 font-mono text-[11px] text-slate-400 bg-white/[0.02] p-4 rounded-xl border border-white/[0.05]">
+<span class="text-slate-600">nums = </span>[-2, 1, -3, 4, -1, 2, 1, -5, 4]
+            </div>
+</div>
+</aside>
+<section class="flex-1 flex flex-col bg-background-dark">
+<div class="h-14 border-b border-[var(--border-color)] flex items-center justify-between px-6 bg-panel-dark/40">
+<div class="flex items-center gap-4">
+<div class="relative group">
+<select class="appearance-none bg-white/5 hover:bg-white/10 border border-white/10 rounded-full py-1.5 pl-5 pr-10 text-xs font-medium text-slate-300 focus:ring-1 focus:ring-primary outline-none cursor-pointer transition-all">
+<option>Python 3.11</option>
+<option>Java 17</option>
+<option>C++ 20</option>
+<option>Node.js 20</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-1.5 text-slate-500 pointer-events-none text-lg">expand_more</span>
+</div>
+<button class="w-8 h-8 flex items-center justify-center text-slate-500 hover:text-white transition-colors" title="Reset Code">
+<span class="material-symbols-outlined text-xl">history</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-9 h-9 flex items-center justify-center text-slate-500 hover:text-white transition-colors" title="Settings">
+<span class="material-symbols-outlined text-xl">settings</span>
+</button>
+<button class="w-9 h-9 flex items-center justify-center text-slate-500 hover:text-white transition-colors" title="Fullscreen">
+<span class="material-symbols-outlined text-xl">fullscreen</span>
+</button>
+</div>
+</div>
+<div class="flex-1 relative font-mono text-[13px] leading-relaxed p-0 overflow-hidden bg-background-dark">
+<div class="absolute inset-0 flex overflow-auto custom-scrollbar">
+<div class="w-12 bg-panel-dark/30 text-slate-700 text-right pt-8 pr-3 select-none border-r border-white/[0.02]">
+                    1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15
+                </div>
+<div class="flex-1 pt-8 pl-6 text-slate-300 whitespace-pre">
+<span style="color: var(--syntax-keyword)">class</span> <span style="color: var(--syntax-class)">Solution</span>:
+    <span style="color: var(--syntax-keyword)">def</span> <span style="color: var(--syntax-func)">maxSubArray</span>(<span style="color: var(--syntax-number)">self</span>, nums: List[<span style="color: var(--syntax-class)">int</span>]) -&gt; <span style="color: var(--syntax-class)">int</span>:
+        <span style="color: var(--syntax-comment)"># Implementation of Kadane's Algorithm</span>
+        max_current = max_global = nums[<span style="color: var(--syntax-number)">0</span>]
+        <span style="color: var(--syntax-keyword)">for</span> i <span style="color: var(--syntax-keyword)">in</span> <span style="color: var(--syntax-func)">range</span>(<span style="color: var(--syntax-number)">1</span>, <span style="color: var(--syntax-func)">len</span>(nums)):
+            max_current = <span style="color: var(--syntax-func)">max</span>(nums[i], max_current + nums[i])
+            <span style="color: var(--syntax-keyword)">if</span> max_current &gt; max_global:
+                max_global = max_current
+        <span style="color: var(--syntax-keyword)">return</span> max_global
+<span class="animate-pulse border-l-2 border-primary ml-1 h-5 inline-block align-middle"></span></div>
+</div>
+</div>
+<div class="h-20 border-t border-[var(--border-color)] bg-panel-dark px-8 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-2 text-xs font-semibold text-slate-500 hover:text-white px-5 py-2.5 rounded-full bg-white/[0.03] border border-white/[0.05] transition-all">
+                    Console Output
+                    <span class="material-symbols-outlined text-sm">keyboard_capslock</span>
+</button>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-white/5 hover:bg-white/10 text-white px-8 py-2.5 rounded-full text-sm font-semibold transition-all border border-white/10">
+                    Run Tests
+                </button>
+<button class="bg-primary hover:bg-indigo-500 text-white px-10 py-2.5 rounded-full text-sm font-bold shadow-xl shadow-primary/20 transition-all flex items-center gap-3">
+                    Submit Solution
+                    <span class="material-symbols-outlined text-sm">rocket_launch</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+
+</body></html>

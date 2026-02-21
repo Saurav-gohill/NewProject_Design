@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Modern Interview Prep Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --primary: #6366f1;
+            --surface: #0f172a;
+            --surface-accent: #1e293b;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #020617;
+        }
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+        }
+        .streaming-gradient {
+            background: linear-gradient(180deg, rgba(2, 6, 23, 0) 0%, rgba(2, 6, 23, 0.8) 100%);
+        }
+        .card-hover-effect {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover-effect:hover {
+            transform: scale(1.02) translateY(-4px);
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.5);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="text-slate-200 min-h-screen flex overflow-hidden">
+<aside class="w-20 lg:w-64 border-r border-white/5 bg-slate-950/50 flex flex-col sticky top-0 h-screen z-50">
+<div class="p-6 flex items-center gap-3">
+<div class="w-10 h-10 bg-indigo-600 rounded-2xl flex items-center justify-center shadow-lg shadow-indigo-500/20">
+<span class="material-symbols-outlined text-white text-2xl">rocket_launch</span>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-white hidden lg:block">PREPHUB</span>
+</div>
+<nav class="flex-1 px-4 space-y-2 mt-6">
+<a class="flex items-center gap-4 px-4 py-3 bg-indigo-500/10 text-indigo-400 rounded-xl font-semibold transition-all" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="hidden lg:block">Browse Hub</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-400 hover:bg-white/5 hover:text-white rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">play_circle</span>
+<span class="hidden lg:block">My Library</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-400 hover:bg-white/5 hover:text-white rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">psychology</span>
+<span class="hidden lg:block">Simulations</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-slate-400 hover:bg-white/5 hover:text-white rounded-xl transition-all" href="#">
+<span class="material-symbols-outlined">terminal</span>
+<span class="hidden lg:block">Coding Lab</span>
+</a>
+</nav>
+<div class="p-4 mt-auto border-t border-white/5">
+<div class="flex items-center gap-3 p-2 bg-white/5 rounded-2xl">
+<img alt="Profile" class="w-10 h-10 rounded-xl object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlQN2PUerEXm-0v1FPnfmqDwMcovCvXhDnhYx8IsBMDxyD3-k47fEP8gaL76YFK9_OCOy7zbExBVbd6zZ6e4On2aMovnJy3Q0I17rvPMa9N8HyTNIYMXtX8QPTVF6SUfydYYb7PfQd63ANe9mAtQEJfPgkAkIcsUrfHhnezr3Icr1FghVcnIxxslBKcECXb6SGY0fTwqOH_iTUW16WjsxUWpYd8ZeGf12snBRhhmJkvp0Fb8RVvML0L6iA-1Vmpvq1dWfGGYkd93Q"/>
+<div class="flex-1 overflow-hidden hidden lg:block">
+<p class="text-sm font-bold text-white truncate">Alex Johnson</p>
+<p class="text-[10px] text-indigo-400 font-bold uppercase tracking-widest">Premium Plan</p>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 overflow-y-auto relative pb-20">
+<header class="relative h-[450px] flex items-end px-12 pb-16 overflow-hidden">
+<img alt="Hero Background" class="absolute inset-0 w-full h-full object-cover opacity-40 scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8o22bdCsClfIQByBPuxKfYpcRjHRgd5ZALJMZCgGCi-DLGyQMGyLt3rorDHZYvF8aXUCEtibg20Tc0u_7FyFbRnt_wIGzJ0oC6vaZebc49QoaQNK3r77NCONbzTtf71GnjLhdIWDVbQzqs5raVusjZ_q5NdmudwGsEUWEEy-_RsvaFxiJ_uFOsFz3eDi-eI5oUvBFZhojf5vEAOHNeadH9va5lA0zpVr8kjPOIQO43bOyJBUKJACGjvcoFG9kEQ4sr4qYAzxcnFQ"/>
+<div class="absolute inset-0 streaming-gradient"></div>
+<div class="relative z-10 max-w-3xl">
+<div class="flex items-center gap-2 mb-4">
+<span class="bg-indigo-600 text-white text-[10px] font-extrabold px-3 py-1 rounded-full uppercase tracking-tighter">New Series</span>
+<span class="text-slate-400 text-sm font-medium">Placement Season 2024</span>
+</div>
+<h1 class="text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-[1.1]">The Engineering Interview <span class="text-indigo-500">Masterclass</span></h1>
+<div class="flex gap-4">
+<button class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:bg-slate-200 transition-all scale-100 active:scale-95">
+<span class="material-symbols-outlined fill-1">play_arrow</span> Resume Learning
+                </button>
+<button class="glass-card px-8 py-4 rounded-xl font-bold text-white flex items-center gap-3 hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">add</span> My List
+                </button>
+</div>
+</div>
+</header>
+<div class="px-12 -mt-10 relative z-20 space-y-12">
+<section>
+<div class="flex items-center justify-between mb-6">
+<h2 class="text-2xl font-bold text-white">Continue Your Preparation</h2>
+<a class="text-indigo-400 text-sm font-bold hover:underline" href="#">View All</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="group relative aspect-[16/10] rounded-3xl overflow-hidden glass-card card-hover-effect">
+<img alt="HR Prep" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGyvLuu8gT68nBS1fmSVSjMjqIimg7eFKV0PMLuIqgJqLOOkKF2e-GRRUkj53mrow-Pk2iGQxZCCqMnjFbGoqdXSSZn_Hk7EJ4bgIav-Gwj1ItQYsGVld8wBlUjjFZMuxyAcidICqsbvX7T2mIkJoNLh2x6zk00UXs72qkuLyxGd9-M65OJJn1CdhH8QaU0q5bKA_LOwKEgHHQzrGwrRarvIrik4RxBPF6MfBzdHftw3MEcA7NDHyJxH56UReL-M_88NDFCxVby5Y"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<div class="flex justify-between items-end mb-4">
+<div>
+<span class="text-indigo-400 font-bold text-xs uppercase tracking-widest mb-1 block">Soft Skills</span>
+<h3 class="text-xl font-bold text-white">Top 50 HR Questions</h3>
+</div>
+<div class="w-12 h-12 rounded-full glass-card border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-slate-950 transition-colors">
+<span class="material-symbols-outlined">play_arrow</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-indigo-500 w-[64%] rounded-full shadow-[0_0_10px_rgba(99,102,241,0.5)]"></div>
+</div>
+<div class="flex justify-between text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+<span>32 Lessons Watched</span>
+<span>64% Complete</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative aspect-[16/10] rounded-3xl overflow-hidden glass-card card-hover-effect">
+<img alt="System Design" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPoqiM9NLKjVRZii1IFLWfIaRZ5zGG--doQqGGhFRhDZ-8H-2YEgbR_0qtUcNmV-Pp08b8y5bV1-yOkW4HjvdDcaoRuN-cBVqGn7ShJYYHs6UXcwmZ7JEtEFLR-MnPmhqd_5HVhY8kwo7vwYxspF9L8QeRgsnDnZf27N31bPWvdexkbfEilDcu1luZsrY9HBcOvfd7lrRQNJGj7fNJ7ds0yMfKg-BBE6OwC_pPGpgEdBi51zzkvczXOFe1i3IT62MOsjc92DmVi_o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<div class="flex justify-between items-end mb-4">
+<div>
+<span class="text-emerald-400 font-bold text-xs uppercase tracking-widest mb-1 block">Architecture</span>
+<h3 class="text-xl font-bold text-white">System Design Basics</h3>
+</div>
+<div class="w-12 h-12 rounded-full glass-card border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-slate-950 transition-colors">
+<span class="material-symbols-outlined">play_arrow</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-emerald-500 w-[33%] rounded-full shadow-[0_0_10px_rgba(16,185,129,0.5)]"></div>
+</div>
+<div class="flex justify-between text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+<span>5 Lessons Watched</span>
+<span>33% Complete</span>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative aspect-[16/10] rounded-3xl overflow-hidden glass-card card-hover-effect">
+<img alt="Behavioral" class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXuSyeYm0lb-pg_plxchEmqR5zu-4uiJk5eRPDEPY1olGtXbDBFN2wyUTcI03O1qae1R-dLItuijy9rCOJoxV8_n1GpJSfMpW7PB4FyHiuNOTPb1Enr-98ndf7tq1TvR9wXP3odDk68_6oh_UOGHa0LCUb_F3ZJZ5m6jfZFAGwmjJn5-SEmVC8tACEyPmtSdRNmH5GoPeMUrhu4wwi4SjmVlfYhjGN_MvWYH-JHCdmzFqh_Pv7mVAqLj0vNb1w6zjwA50362lxaf8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+<div class="absolute inset-0 p-6 flex flex-col justify-end">
+<div class="flex justify-between items-end mb-4">
+<div>
+<span class="text-amber-400 font-bold text-xs uppercase tracking-widest mb-1 block">Strategy</span>
+<h3 class="text-xl font-bold text-white">STAR Method Mastery</h3>
+</div>
+<div class="w-12 h-12 rounded-full glass-card border-white/20 flex items-center justify-center text-white group-hover:bg-white group-hover:text-slate-950 transition-colors">
+<span class="material-symbols-outlined">play_arrow</span>
+</div>
+</div>
+<div class="space-y-2">
+<div class="h-1.5 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-amber-500 w-[80%] rounded-full shadow-[0_0_10px_rgba(245,158,11,0.5)]"></div>
+</div>
+<div class="flex justify-between text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+<span>8 Lessons Watched</span>
+<span>80% Complete</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-8 space-y-6">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="text-2xl font-bold text-white flex items-center gap-2">
+                            Practice Studio
+                            <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
+</h2>
+<p class="text-slate-400 text-sm">Review your non-verbal cues and speech clarity.</p>
+</div>
+<button class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">videocam</span>
+                        Enter Studio
+                    </button>
+</div>
+<div class="relative group rounded-[32px] overflow-hidden bg-slate-900 border border-white/5 shadow-2xl">
+<div class="aspect-video relative">
+<div class="absolute inset-0 flex flex-col items-center justify-center bg-[url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&amp;w=2072&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-20 grayscale"></div>
+<div class="absolute inset-0 flex flex-col items-center justify-center z-10">
+<div class="w-20 h-20 bg-white/5 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-center text-white mb-4">
+<span class="material-symbols-outlined text-4xl">no_photography</span>
+</div>
+<p class="font-bold text-white tracking-tight">Camera Feed Disconnected</p>
+<p class="text-slate-400 text-sm mt-1">Ready to start recording session</p>
+</div>
+<div class="absolute top-8 left-8 right-8 flex justify-center z-20">
+<div class="glass-card px-8 py-5 rounded-2xl max-w-xl text-center">
+<span class="text-[10px] uppercase font-bold tracking-[0.2em] text-indigo-400 mb-2 block">Active Prompt</span>
+<h4 class="text-lg font-bold text-white italic leading-tight">"Tell me about a time you handled a difficult team dynamic. What did you do?"</h4>
+</div>
+</div>
+<div class="absolute bottom-8 left-8 right-8 flex justify-between items-center z-20">
+<div class="flex items-center gap-4">
+<div class="px-4 py-2 glass-card rounded-xl flex items-center gap-3 border-red-500/20">
+<div class="w-2.5 h-2.5 bg-red-500 rounded-full"></div>
+<span class="font-mono text-white font-bold tracking-widest">00:00:00</span>
+</div>
+</div>
+<div class="flex gap-3">
+<button class="w-12 h-12 glass-card rounded-2xl flex items-center justify-center hover:bg-white/10 transition-all text-white">
+<span class="material-symbols-outlined">mic</span>
+</button>
+<button class="w-12 h-12 glass-card rounded-2xl flex items-center justify-center hover:bg-white/10 transition-all text-white">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-4 space-y-8">
+<div>
+<h3 class="text-lg font-bold text-white mb-4">Upcoming Screenings</h3>
+<div class="space-y-3">
+<div class="glass-card p-4 rounded-2xl flex items-center gap-4 hover:border-white/20 transition-all cursor-pointer group">
+<div class="w-14 h-14 bg-indigo-500/10 rounded-xl flex flex-col items-center justify-center text-indigo-400 border border-indigo-500/20">
+<span class="text-[10px] font-bold uppercase">Oct</span>
+<span class="text-xl font-extrabold leading-none">24</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-white text-sm">Technical Screening</h4>
+<p class="text-xs text-slate-400">Sarah Miller • 2:00 PM</p>
+</div>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-white transition-colors">chevron_right</span>
+</div>
+<div class="glass-card p-4 rounded-2xl flex items-center gap-4 hover:border-white/20 transition-all cursor-pointer group">
+<div class="w-14 h-14 bg-emerald-500/10 rounded-xl flex flex-col items-center justify-center text-emerald-400 border border-emerald-500/20">
+<span class="text-[10px] font-bold uppercase">Oct</span>
+<span class="text-xl font-extrabold leading-none">26</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-white text-sm">Culture Fit Round</h4>
+<p class="text-xs text-slate-400">David Chen • 11:30 AM</p>
+</div>
+<span class="material-symbols-outlined text-slate-600 group-hover:text-white transition-colors">chevron_right</span>
+</div>
+</div>
+<button class="w-full mt-4 py-3 rounded-2xl border border-dashed border-white/10 text-slate-400 text-sm font-bold hover:bg-white/5 transition-colors">
+                        + Schedule New Session
+                    </button>
+</div>
+<div class="relative overflow-hidden rounded-[32px] p-8 group">
+<img alt="Resume" class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXRjaicEnWSND3UlVjrrViRX7MdxmogizHHGLrtw_Hc8aAfeRtbYaCvC0w31zFVItXNfGphi47lTJ5uc3gYTLTYVkmNJPxxDMVNuXRHTjYZ6tJobuIrFHFUdFrLXjvFrtOTVNXx_EB4kMqDPE70BuGgXMGeEJdZJyZYjwWDqC6q0DRjKXWewVBSwnKqtQFhLV8zIJtOFbnfoTp-6wkw__6l5RUTe4Zl6qDjnFqz2J4_kR1VFZy2m6wl7iObsww_jJT_F36w2poTx4"/>
+<div class="absolute inset-0 bg-indigo-900/80 backdrop-blur-sm"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-white text-4xl mb-4">description</span>
+<h3 class="text-xl font-extrabold text-white mb-2">Resume AI Review</h3>
+<p class="text-indigo-100 text-sm mb-6 leading-relaxed">Boost your shortlisting chances by 40% with our automated feedback engine.</p>
+<button class="w-full bg-white text-indigo-900 py-3 rounded-xl font-extrabold text-sm shadow-xl shadow-black/20 hover:bg-indigo-50 transition-all active:scale-95">
+                            Upload PDF
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<div class="glass-card p-6 rounded-3xl">
+<p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Readiness</p>
+<div class="flex items-end gap-2">
+<span class="text-4xl font-extrabold text-white leading-none">72%</span>
+<span class="text-emerald-400 text-xs font-bold mb-1">+4% this week</span>
+</div>
+</div>
+<div class="glass-card p-6 rounded-3xl">
+<p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Daily Streak</p>
+<div class="flex items-end gap-2">
+<span class="text-4xl font-extrabold text-white leading-none">12</span>
+<span class="text-amber-500 material-symbols-outlined fill-1 mb-1">local_fire_department</span>
+</div>
+</div>
+<div class="glass-card p-6 rounded-3xl">
+<p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Practice Time</p>
+<div class="flex items-end gap-2">
+<span class="text-4xl font-extrabold text-white leading-none">4.5h</span>
+<span class="text-slate-500 text-xs font-bold mb-1">Goal: 5h</span>
+</div>
+</div>
+<div class="glass-card p-6 rounded-3xl">
+<p class="text-slate-400 text-xs font-bold uppercase tracking-widest mb-2">Rank</p>
+<div class="flex items-end gap-2">
+<span class="text-4xl font-extrabold text-white leading-none">#42</span>
+<span class="text-indigo-400 text-xs font-bold mb-1">Top 5%</span>
+</div>
+</div>
+</section>
+</div>
+</main>
+
+</body></html>
